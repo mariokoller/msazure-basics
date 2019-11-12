@@ -78,6 +78,7 @@ Um dies besser verstehen zu können, müssen die einzelnen Begriffe zuerst getre
 
 REST ist eine Programmierschnittstelle, welche vor allem für Webservices genutzt wird, der Schwerpunkt von REST liegt hauptsächlich auf der Maschine-zu-Maschine-Kommunikation. Dabei werden sogenannte HTTP Requests gesendet, um mögliche Ressourcen abzufragen, zu erstellen oder zu verändern.
 <br>
+
 HTTP Methoden   | Beschreibung
 ----------------|-----------------------------------------
 *GET*           | fordert Daten vom Server an
