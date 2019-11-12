@@ -20,10 +20,11 @@
 
 ### **Voraussetzungen**
 
+- Wissen was Cloud Computing ist
+  - [Cloud Computing](https://azure.microsoft.com/de-de/overview/what-is-cloud-computing/)
 - PC oder Notebook mit mindestens 500 MB freiem Speicher
-- Installationsrechte auf PC oder Notebook
+- Internetzugang und Installationsrechte auf PC oder Notebook
 - Eine *@edu.tbz.ch* Mailadresse
-- Internetzugang
 - Azure Login und Kreditkarte
   - [Vorgaben zur Erstellung der Kostenlosen Testversion von Azure](https://azure.microsoft.com/de-de/free/search/?&ef_id=CjwKCAiAzanuBRAZEiwA5yf4ulbx9kqfcVaJ9vkpLA03guKpPedDCSNdF8f9jxGkmtBfx6doYV8QcBoCSIMQAvD_BwE:G:s&OCID=AID2000121_SEM_vSRrxmCi&MarinID=vSRrxmCi_324545487768_%2Bazure%20%2Btestversion_b_c__61873088805_kwd-344628111788&lnkd=Google_Azure_Brand&dclid=CNzLtsDs5OUCFRfJdwodMyUFlw)
 

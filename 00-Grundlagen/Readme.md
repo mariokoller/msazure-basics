@@ -1,9 +1,9 @@
 # 00-Grundlagen
 
-Dieses Kapitel behandelt die Grundlagen zur Azure Plattform und zum REST API.
+Dieses Kapitel behandelt einerseits die Grundlagen zur Azure Plattform und zum REST API und dient des weiteren dazu, das man Ressourcen erstellt, welche zwingend für das Kapitel 01-Azure Login und 02-VM notwendig sind.
 
 ### **Lernziele**
-Nach Abschluss des Kapitels 00-Grundlagen, kennen Sie den Aufbau der Azure Plattform, haben die ersten Ressourcen angelegt und Wissen was ein REST API ist.
+Nach Abschluss des Kapitels 00-Grundlagen, kennen Sie den Aufbau der Azure Plattform, haben die ersten Ressourcen angelegt und Wissen was das REST API ist.
 
 ### **Inhaltsverzeichnis**
 - [Azure Plattform](#Azure-Plattform)
@@ -70,6 +70,24 @@ Muss manuell erstellt werden, erst mittels dieser Ressourcengruppe lässt sich m
 
 # REST API
 
+<tab>           | <tab>
+----------------|-----------------------------------------
+**REST**        | Representational State Transfer
+**API**         | Application Programming Interface
 
+
+
+
+<br>
+Die unterstützten HTTP-Methoden sind:<br>
+
+<tab>           | <tab>
+----------------|-----------------------------------------
+**GET**         | fordert Daten vom Server an
+**POST**        | übermittelt Daten an den Server
+**PUT / PATCH** | ändert bestehende Daten auf dem Server
+**DELETE**      | löscht bestehnde Daten auf dem Server
+
+<br>
 
 > [⇧ **Zum Inhaltsverzeichnis**](#Inhaltsverzeichnis)
