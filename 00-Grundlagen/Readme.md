@@ -81,10 +81,10 @@ REST ist eine Programmierschnittstelle, welche vor allem für Webservices genutz
 
 HTTP Methoden   | Beschreibung
 ----------------|-----------------------------------------
-*GET*           | fordert Daten vom Server an
-*POST*          | übermittelt Daten an den Server
-*PUT / PATCH*   | ändert bestehende Daten auf dem Server
-*DELETE*        | löscht bestehnde Daten auf dem Server
+*GET*           | Fordert Daten vom Server an
+*POST*          | Übermittelt Daten an den Server
+*PUT / PATCH*   | Ändert bestehende Daten auf dem Server
+*DELETE*        | Löscht bestehende Daten auf dem Server
 <br>
 
 > **API &rarr; Application Programming Interface**
