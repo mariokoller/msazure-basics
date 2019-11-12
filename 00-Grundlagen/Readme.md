@@ -41,11 +41,35 @@ Zuerst einmal eine kurze Übersicht über alle Ressourcen die wir auf der Haupts
 ![](../Bilder/Kostenverwaltung.png)<br>Kostenverwaltung und Abrechnung | Dient zur Übersicht Ihrer aktuellen Kosten und Abrechnungen.
 ![](../Bilder/Hilfe.png)<br>Hilfe und Support                       | Sie haben ein Problem in Ihrem Azure Konto oder wissen über etwas nicht Bescheid, dieser Menüpunkt sollte Ihnen behilflich sein.
 
-
 # Ressourcen erstellen
 
 > [⇧ **Zum Inhaltsverzeichnis**](#Inhaltsverzeichnis)
 
+Die folgenden zwei Ressourcen sind notwendig, um mit dem Folgekapiteln **01-Azure Login** und **02-VM erstellen** weiterzufahren.<br>
+Die Vorlagen für die Automatisierung finden Sie immer am Ende eines Subkapitels. 
+
+### **Ressourcengruppen**
+
+Muss manuell erstellt werden, erst mittels dieser Ressourcengruppe lässt sich mittels REST API weitere Ressourcen ansteurn.
+
+1. Klicken Sie auf Ressourcengruppen und danach auf Hinzufügen
+2. Geben Sie der Ressourcengruppe einen **eindeutigen** Namen, dieser wird im Kapitel 01-Azure Login und 02-VM erstellen wieder benötigt.
+3. Wählen Sie noch als Region (Europa) Europa, Westen aus.
+
+> [Vorlage für die Automatisierung](Vorlagen/Ressourcengruppe.md)
+
+### **Virtuelles Netzwerk**
+
+1. Klicken Sie auf Virtuelle Netzwerke und danach auf Hinzufügen
+2. Geben Sie dem virtuellem Netzwerk einen **eindeutigen** Namen, dieser wiederrum wird auch im Kapitel 01-Azure Login und 02-VM erstellen benötigt.
+3. Geben Sie unter Ressourcengruppe, die Gruppe an welche so vorhin erstellt haben.
+4. Als Standort geben Sie ebenfalls (Europa) Europa, Westen an.
+5. Alle anderen Einstellungen belassen wir auf Standard.
+
+> [Vorlage für die Automatisierung](Vorlagen/VNET.md)
+
 # REST API
+
+
 
 > [⇧ **Zum Inhaltsverzeichnis**](#Inhaltsverzeichnis)

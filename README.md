@@ -15,8 +15,8 @@
 
 ### **Zielgruppe**
 
-Dieser Selbststudienkurs ist für komplette Neulinge im Bereich Azure und REST API ausgelegt.<br>
-Sie wissen zwar was Azure und Cloud-Computing ist aber haben noch nie damit gearbeitet <br>geschweige mittels REST API eine Ressource erstellt.
+- Für komplette Neulinge im Bereich Azure und REST API, wird Step by Step an das Thema herangegangen und alles erklärt.
+- Für Studenten welche bereits Erfahrung mit Azure und der Automatisierung haben, wird in jedem Abschnitt eine Vorlage zur Anpassung vorhanden sein.
 
 ### **Voraussetzungen**
 
