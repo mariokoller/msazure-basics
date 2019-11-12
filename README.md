@@ -19,6 +19,6 @@ Dieser Selbststudienkurs ist für komplette Neulinge im Bereich Azure und REST A
 Der Kurs wird aufgeteilt in vier Kapitel:<br>
 
 - [00-Grundlagen](00-Grundlagen/)
-- [01-Azure-Login](01-Azure-Login/)
-- [02-VM erstellen](02-VM erstellen/)
+- [01-Loginvorgang](01-Loginvorgang/)
+- [02-VirtuelleMaschine](02-VirtuelleMaschine/)
 - [03-Fragen](03-Fragen/)
