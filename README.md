@@ -1,6 +1,6 @@
 # **Automatisierung mit MS Azure**<br>
 
-![Logo Selbststudienkurs](Bilder/VA_GitHub_Logo.bmp)
+![Logo Selbststudienkurs](Bilder/VA_GitHub_Logo.png)
 
 
 ### **Ihr Nutzen**
