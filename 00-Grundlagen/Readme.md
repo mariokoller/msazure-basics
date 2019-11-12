@@ -56,7 +56,7 @@ Muss manuell erstellt werden, erst mittels dieser Ressourcengruppe lässt sich m
 2. Geben Sie der Ressourcengruppe einen **eindeutigen** Namen, dieser wird im Kapitel 01-Azure Login und 02-VM erstellen wieder benötigt.
 3. Wählen Sie noch als Region (Europa) Europa, Westen aus.
 
-> [Vorlage für die Automatisierung](Vorlagen/Ressourcengruppe.md)
+> [Vorlage für die Automatisierung](../Vorlagen/Ressourcengruppe.md)
 
 ### **Virtuelles Netzwerk**
 
@@ -66,7 +66,7 @@ Muss manuell erstellt werden, erst mittels dieser Ressourcengruppe lässt sich m
 4. Als Standort geben Sie ebenfalls (Europa) Europa, Westen an.
 5. Alle anderen Einstellungen belassen wir auf Standard.
 
-> [Vorlage für die Automatisierung](Vorlagen/VNET.md)
+> [Vorlage für die Automatisierung](../Vorlagen/VNET.md)
 
 # REST API
 
