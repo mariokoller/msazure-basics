@@ -91,6 +91,7 @@ HTTP Methoden   | Beschreibung
 API ist eine vereinbarte Methode zum Senden und Empfangen von Daten zwischen Computern. Wenn Sie zum Beispiel eine eigene Webseite haben und auf dieser Google Maps angezeigt haben möchten, müssen Sie Google auffordern Ihnen die Karte zur Verfügung zu stellen. Dies geschieht indem Sie eine von Google bereitgestellte API verwenden, die Ihnen mitteilt welche Webadresse Sie die Anforderungen zum Abrufen der Daten senden sollen. Dies muss dann in einer formalen Sprache geschehen um vom Google-Server eine Antwort zu erhalten.<br>
 <br>
 Folgende Grafik erleutert den Vorgang eines REST API besser:<br>
+
 ![Grafik REST API](../Bilder/VA_Grafik_REST API.png)
 
 >Um solch ein REST API nutzen zu können benötigen Sie unter Windows zusätzliche Software.<br> Hierzu finden Sie unter folgendem [Link](https://www.slant.co/topics/7913/~rest-api-clients) einige Auswahlmöglichkeiten.
