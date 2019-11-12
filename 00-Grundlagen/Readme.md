@@ -6,11 +6,14 @@ Dieses Kapitel behandelt die Grundlagen zur Azure Plattform und zum REST API.
 Nach Abschluss des Kapitels 00-Grundlagen, kennen Sie den Aufbau der Azure Plattform, haben die ersten Ressourcen angelegt und Wissen was ein REST API ist.
 
 ### **Inhaltsverzeichnis**
-- [Azure Plattform](#-Azure-Plattform)
-- [Ressourcen erstellen](#-Ressourcen-erstellen)
-- [REST API](#-REST-API)
+- [Azure Plattform](#Azure-Plattform)
+- [Ressourcen erstellen](#Ressourcen-erstellen)
+- [REST API](#REST-API)
 
 # Azure Plattform
+
+> [⇧ **Zum Inhaltsverzeichnis**](#Inhaltsverzeichnis)
+
 ### **Übersicht**
 Zuerst einmal eine kurze Übersicht über alle Ressourcen die wir auf der Hauptseite sehen.<br>
 
@@ -41,4 +44,8 @@ Zuerst einmal eine kurze Übersicht über alle Ressourcen die wir auf der Haupts
 
 # Ressourcen erstellen
 
+> [⇧ **Zum Inhaltsverzeichnis**](#Inhaltsverzeichnis)
+
 # REST API
+
+> [⇧ **Zum Inhaltsverzeichnis**](#Inhaltsverzeichnis)

@@ -31,6 +31,6 @@ Sie wissen zwar was Azure und Cloud-Computing ist aber haben noch nie damit gear
 Der Kurs wird aufgeteilt in vier Kapitel:
 
 - [00-Grundlagen](00-Grundlagen/)
-- [01-Azure Login](01-Azure-Login/)
-- [02-VM erstellen](02-VM-erstellen/)
+- [01-Azure Login](01-Azure%20Login/)
+- [02-VM erstellen](02-VM%20erstellen/)
 - [03-Fragen](03-Fragen/)
