@@ -28,7 +28,7 @@ Sie wissen zwar was Azure und Cloud-Computing ist aber haben noch nie damit gear
   - [Vorgaben zur Erstellung der Kostenlosen Testversion von Azure](https://azure.microsoft.com/de-de/free/search/?&ef_id=CjwKCAiAzanuBRAZEiwA5yf4ulbx9kqfcVaJ9vkpLA03guKpPedDCSNdF8f9jxGkmtBfx6doYV8QcBoCSIMQAvD_BwE:G:s&OCID=AID2000121_SEM_vSRrxmCi&MarinID=vSRrxmCi_324545487768_%2Bazure%20%2Btestversion_b_c__61873088805_kwd-344628111788&lnkd=Google_Azure_Brand&dclid=CNzLtsDs5OUCFRfJdwodMyUFlw)
 
 ### **Inhaltsverzeichnis**
-Der Kurs wird aufgeteilt in vier Kapitel:
+Der Kurs wird aufgeteilt in diese vier Kapitel:
 
 - [00-Grundlagen](00-Grundlagen/)
 - [01-Azure Login](01-Azure%20Login/)
