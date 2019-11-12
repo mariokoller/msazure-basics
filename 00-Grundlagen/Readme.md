@@ -12,7 +12,7 @@ Nach Abschluss des Kapitels 00-Grundlagen, kennen Sie den Aufbau der Azure Platt
 
 # Azure Plattform
 
-> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
+> [&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
 
 ### **Übersicht**
 Zuerst einmal eine kurze Übersicht über alle Ressourcen die wir auf der Hauptseite sehen.<br>
@@ -42,7 +42,7 @@ Menüpunkte                                                             | Beschr
 
 # Ressourcen erstellen
 
-> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
+> [&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
 
 Die folgenden zwei Ressourcen sind notwendig, um mit dem Folgekapiteln **01-Azure Login** und **02-VM erstellen** weiterzufahren.<br>
 Die Vorlagen für die Automatisierung finden Sie immer am Ende eines Subkapitels. 
@@ -68,13 +68,13 @@ Muss manuell erstellt werden, erst mittels dieser Ressourcengruppe lässt sich m
 > [**Vorlage für die Automatisierung**](../Vorlagen/VNET.md)
 
 # REST API
->[&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
+>[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
 
 Was ist ein REST API?<br>
 
 Um dies besser verstehen zu können, müssen die einzelnen Begriffe zuerst getrennt voneinander erklärt werden.
 
-> **REST** &rarr; Representational State Transfer<br>
+> **REST &rarr; Representational State Transfer**<br>
 
 REST ist eine Programmierschnittstelle, welche vor allem für Webservices genutzt wird, der Schwerpunkt von REST liegt hauptsächlich auf der Maschine-zu-Maschine-Kommunikation. Dabei werden sogenannte HTTP Requests gesendet, um mögliche Ressourcen abzufragen, zu erstellen oder zu verändern.
 <br>
@@ -85,8 +85,9 @@ HTTP Methoden   | Beschreibung
 *POST*          | übermittelt Daten an den Server
 *PUT / PATCH*   | ändert bestehende Daten auf dem Server
 *DELETE*        | löscht bestehnde Daten auf dem Server
+<br>
 
-> **API** &rarr; Application Programming Interface
+> **API &rarr; Application Programming Interface**
 
 API ist eine vereinbarte Methode zum Senden und Empfangen von Daten zwischen Computern. Wenn Sie zum Beispiel eine eigene Webseite haben und auf dieser Google Maps angezeigt haben möchten, müssen Sie Google auffordern Ihnen die Karte zur Verfügung zu stellen. Dies geschieht indem Sie eine von Google bereitgestellte API verwenden, die Ihnen mitteilt welche Webadresse Sie die Anforderungen zum Abrufen der Daten senden sollen. Dies muss dann in einer formalen Sprache geschehen um vom Google-Server eine Antwort zu erhalten.<br>
 <br>
@@ -94,4 +95,6 @@ Folgende Grafik erleutert den Vorgang eines REST API besser:<br>
 
 ![Grafik REST API](../Bilder/VA_Grafik_REST%20API.png)
 
-> Um solch ein REST API nutzen zu können benötigen Sie unter Windows zusätzliche Software.<br> Hierzu finden Sie unter folgendem [Link](https://www.slant.co/topics/7913/~rest-api-clients) einige Auswahlmöglichkeiten.
+<br>
+
+> **Um solch ein REST API nutzen zu können benötigen Sie unter Windows zusätzliche Software.<br> Hierzu finden Sie unter folgendem [Link](https://www.slant.co/topics/7913/~rest-api-clients) einige Auswahlmöglichkeiten.**
