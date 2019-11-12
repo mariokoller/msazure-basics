@@ -12,15 +12,18 @@ Nach Abschluss des Kapitels 00-Grundlagen, kennen Sie den Aufbau der Azure Platt
 
 # Azure Plattform
 ### **Übersicht**
-Zuerst einmal eine kurze Übersicht über alle Ressourcen die wir auf der Hauptseite sehen.
-- ![Ressourcen erstellen](Bilder/Ressourcen_erstellen.png/) Ressourcen erstellen
-  - test
-- ![Home](Bilder/Home.png/) Home
-- ![Dashboard](Bilder/Dashboard.png/) Dashboard
-- ![Alle Dienste](Bilder/Alle_Dienste.png/) Alle Dienste
+Zuerst einmal eine kurze Übersicht über alle Ressourcen die wir auf der Hauptseite sehen.<br>
+Bei einigen ist eine Erklärung nötig, bei anderen ist der Punkt selbsterklärend.
+- ![Ressourcen erstellen](../Bilder/Ressourcen_erstellen.png) Ressourcen erstellen
+- ![Home](../Bilder/Home.png) Home
+  - Zurück zur Hauptseite
+- ![Dashboard](../Bilder/Dashboard.png) Dashboard
+  - Zeit Ihr Azure Profil in einem Dashboard an
+- ![Alle Dienste](../Bilder/Alle_Dienste.png/) Alle Dienste
 
+![Logo Selbststudienkurs](../Bilder/VA_GitHub_Logo.png)
 
-
+![Home](../Bilder/Home.png)
 
 
 
