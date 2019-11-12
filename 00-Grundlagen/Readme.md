@@ -94,4 +94,4 @@ Folgende Grafik erleutert den Vorgang eines REST API besser:<br>
 
 ![Grafik REST API](../Bilder/VA_Grafik_REST API.png)
 
->Um solch ein REST API nutzen zu können benötigen Sie unter Windows zusätzliche Software.<br> Hierzu finden Sie unter folgendem [Link](https://www.slant.co/topics/7913/~rest-api-clients) einige Auswahlmöglichkeiten.
+> Um solch ein REST API nutzen zu können benötigen Sie unter Windows zusätzliche Software.<br> Hierzu finden Sie unter folgendem [Link](https://www.slant.co/topics/7913/~rest-api-clients) einige Auswahlmöglichkeiten.
