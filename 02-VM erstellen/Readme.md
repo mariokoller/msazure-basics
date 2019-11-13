@@ -6,8 +6,83 @@ Dieses Kapitel dient als Anleitung wie man eine virtuelle Maschine (Windows Serv
 Sie können nach Abschluss dieses Kapitels den Bodyinhalt eines REST Requests nach belieben verändern und wissen wie man ein JSON-File in ein Request einbinden kann. Sie lernen die Automatisierung anhand eines praktischen Beispieles, noch besser kennen.
 
 ### **Inhaltsverzeichnis**
-- [VM Einstellungen](#VM-Einstellungen)
-- [Body Inhalt - JSON](#Body-Inhalt---JSON)
+- [VM Template](#VM-Template)
+- [REST Request erstellen](#REST-Request-erstellen)
+- [Azure Ressourcenübersicht](#Azure-Ressourcenübersicht)
 
-# VM Einstellungen
-Da Sie nun im Kapitel 00-Grundlagen und 01-Azure Login alle Vorarbeiten erledigt haben, können 
+# VM Template
+>[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+
+Sie sind nun mit der Thematik Automatisierung ein wenig vertrauter, daher wird ein Template für die Erstellung einer virtuellen Maschine einmal auseinandergenommen und analysiert.
+
+**Zum ersten Teil:**
+
+```
+"location": "westeurope",
+  "properties": {
+    "hardwareProfile": {
+      "vmSize": "Standard_DS1_v2"
+```
+Als Location müssen Sie, wenn Sie bereits immer West Europa angegeben haben, auch hier wieder westeurope auswählen, da es ansonsten zu Fehlern kommt. Was Sie hier auch noch anpassen können ist die vmSize, es gibt von Azure gewisse Standards die Sie auswählen können, eine Übersicht dazu finden Sie auf dieser [Webseite](https://docs.microsoft.com/de-de/azure/virtual-machines/windows/sizes-general).<br>
+
+Ich habe mich für "Standard_DS1_v2" entschieden, da Sie mit der Kostenlosen Testversion nur 200$ zur Verfügung haben.
+
+**Zum zweiten Teil dieses Templates:**
+```
+    "storageProfile": {
+      "imageReference": {
+        "sku": "2016-Datacenter",
+        "publisher": "MicrosoftWindowsServer",
+        "version": "latest",
+        "offer": "WindowsServer"
+```
+In diesem Abschnitt wurde das Image ausgewählt, welches gerolloutet werden soll.<br>
+Mit folgendem [Link](https://docs.microsoft.com/en-us/rest/api/compute/virtualmachineimages/list), können Sie eine Übersicht aller Images erstellen welche in Azure vorhanden sind, nutzen Sie dafür den REST API WebClient von Microsoft. 
+
+**Dritter Teil:**
+```
+"osDisk": {
+        "caching": "ReadWrite",
+        "createOption": "FromImage",
+        "name": "VMdisk"
+      },
+      "dataDisks": [
+        {
+          "diskSizeGB": 1023,
+          "createOption": "Empty",
+          "lun": 0
+        },
+        {
+          "diskSizeGB": 1023,
+          "createOption": "Empty",
+          "lun": 1
+```
+Folgender Abschnitt zeigt im oberen Teil, die Disk auf welcher die zwei unteren "Partitionen" erstellt wurden mit je 1023 GB Speicher.
+
+**Vierter und letzter Teil**
+```
+    "osProfile": {
+      "adminUsername": "mario",
+      "computerName": "NeuerWin2016Srv",
+      "adminPassword": "DasistmeinPasswort$"
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/5137de89-2b0d-4671-b576-0ed207322766/resourceGroups/storagemsazurebasics/providers/Microsoft.Network/networkInterfaces/networkazurebasics",
+          "properties": {
+            "primary": true
+```
+Im letzten Abschnitt 
+
+<br>
+
+> **Den Link zum kompletten Template finden Sie [**hier**](../Vorlagen/VM_Template.md).**
+
+# REST Request erstellen
+>[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+
+
+
+# Azure Ressourcenübersicht
+>[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)

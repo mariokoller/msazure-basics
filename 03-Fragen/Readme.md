@@ -51,7 +51,10 @@ Ein Bearer Token wird im Authorization-Header von REST benötigt um Anforderunge
 
 ---
 
-**6. Was wird mit folgendem GET Request abgefragt?**<br>`GET https://management.azure.com/subscriptions/5137de89-2b0d-4671-b576-0ed207322766/resourcegroups?api-version=2017-05-10`
+**6. Was wird mit folgendem GET Request abgefragt?**<br>
+```
+GET https://management.azure.com/subscriptions/5137de89-2b0d-4671-b576-0ed207322766/resourcegroups?api-version=2019-03-01
+```
 <details><summary>Antwort</summary><p>
-Die Resourcegruppen der SubscriptionId 5137de89-2b0d-4671-b576-0ed207322766
+Die Ressourcengruppen der SubscriptionId "5137de89-2b0d-4671-b576-0ed207322766", dies kann beispielsweise ein Storage sein oder ein Netzwerküberwachungsdienst von Azure. Weitere Ressourcengruppen finden Sie im Kapitel 00-Grundlagen.
 </p></details>
