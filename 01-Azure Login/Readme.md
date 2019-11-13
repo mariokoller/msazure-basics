@@ -1,4 +1,4 @@
-# **Azure Login**
+# Azure Login
 
 In diesem Kapitel werden die Grundlagen zum automatisierten Azure Login erleutert und erklärt. Anhand praktischen Beispielen werden Sie die Grundanforderungen erlernen um ein REST API im Kapitel 02-VM erstellen zu können.
 
@@ -13,7 +13,7 @@ Wenn Sie dieses Kapitel durchgearbeitet haben, kennen Sie die wichtigsten Parame
 # Azure ID's auslesen
 >[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
 
-Für was benötigen wir solche ID's?<br>
+Für was benötigen Sie solche ID's?<br>
 
 ID's werden benötigt, um dem erstelltem HTTP Request sein eindeutiges Ziel anzugeben. Solch ein Request kann zum Beispiel wie folgt aussehen:<br>
 
@@ -21,11 +21,11 @@ ID's werden benötigt, um dem erstelltem HTTP Request sein eindeutiges Ziel anzu
 GET https://management.azure.com/subscriptions/5137de89-2b0d-4671-b576-0ed207322766/resourcegroups?api-version=2017-05-10
 ```
 
-In diesem Beispiel wollen wir beispielsweise die Ressourcegruppen einer SubscriptionID herauslesen.<br>
+In diesem Beispiel können Sie beispielsweise die Ressourcegruppen einer SubscriptionID herauslesen.<br>
 
 ---
 
-Folgende ID's benötigen wir von Azure um weiterzufahren:
+Folgende ID's benötigen Sie von Azure um weiterzufahren:
 
 - tenantId
 - subscriptionId
@@ -118,10 +118,14 @@ Folgende Grafik sollte dies besser veranschaulichen können.<br>
 `GET https://login.microsoftonline.com/{{tenantId}}/oauth2/token?api-version=2019-03-01`<br>
 {{tenantId}} ist eine Variable welche Sie in der Collection erfasst haben.<br>
 
-Im Body müssen noch folgende Angaben mitgegeben werden.<br>
+Im Body muss die Option **form-data** mit folgenden Angaben ausgefüllt werden.<br>
 
-![Postman Bearer Token](../Bilder/Postman_BearerToken.png)
-<br>
+Key             | Value
+----------------|-----------------------------------------
+grant_type      | `client_credentials`
+client_id       | `{{clientId}}`
+client_secret   | `{{clientSecret}}`
+resource        | `https://management.core.windows.net/`
 
 Als Statusausgabe erhalten Sie den HTTP Request 200 OK, mit folgendem Inhalt:<br>
 
@@ -138,4 +142,32 @@ Als Statusausgabe erhalten Sie den HTTP Request 200 OK, mit folgendem Inhalt:<br
 ```
 Diese kryptische Zeichenfolge ist Ihr Bearer Token, welcher nun für **eine Stunde gültig** ist.<br>
 
-> **WICHTIG: Speichern Sie den GET Request in Ihrer Collection ab.**
+### **Bearer Token automatisieren**
+
+Um das ganze besser automatisieren zu können, erstellen Sie folgenden POST Request, welcher den Bearer Token direkt in die Variable {{bearerToken}} abspeichert.<br>
+
+Erstellen Sie folgenden POST Request:<br> 
+`POST https://login.microsoftonline.com/{{tenantId}}/oauth2/token`<br>
+
+Im Body muss die Option **x-www-form-urlencoded** gewählt werden und folgende Informationen müssen eingefügt werden.
+
+Key             | Value
+----------------|--------------------
+grant_type      | `client_credentials`
+client_id       | `{{clientId}}`
+client_secret   | `{{clientSecret}}`
+resource        | `{{resource}}`
+
+Unter Tests fügen Sie dann noch nachfolgenden Code ein.
+
+```
+pm.test(pm.info.requestName, () => {
+    pm.response.to.not.be.error;
+    pm.response.to.not.have.jsonBody('error');
+});
+pm.globals.set("bearertoken", pm.response.json().access_token);
+```
+
+Nun wird beim absetzen des POST Request die Variable {{bearerToken}} automatisiert mit dem passendem Wert gefüllt.
+
+> **WICHTIG: Vergessen Sie nicht diesen POST Request abzuspeichern!**

@@ -1,4 +1,4 @@
-# **00-Grundlagen**
+# 00-Grundlagen
 
 Dieses Kapitel behandelt einerseits die Grundlagen zur Azure Plattform und zum REST API und dient des weiteren dazu, das man Ressourcen erstellt, welche zwingend für das Kapitel 01-Azure Login und 02-VM notwendig sind.
 
@@ -15,7 +15,7 @@ Nach Abschluss des Kapitels 00-Grundlagen, kennen Sie den Aufbau der Azure Platt
 > [&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
 
 ### **Übersicht**
-Zuerst einmal eine kurze Übersicht über alle Ressourcen die wir auf der Hauptseite sehen.<br>
+Zuerst einmal eine kurze Übersicht über alle Ressourcen die Sie auf der Hauptseite sehen.<br>
 
 Menüpunkte                                                             | Beschreibung
 -----------------------------------------------------------------------|-----------------------------------
@@ -63,7 +63,7 @@ Muss manuell erstellt werden, erst mittels dieser Ressourcengruppe lässt sich m
 2. Geben Sie dem virtuellem Netzwerk einen **eindeutigen** Namen, dieser wiederrum wird auch im Kapitel 01-Azure Login und 02-VM erstellen benötigt.
 3. Geben Sie unter Ressourcengruppe, die Gruppe an welche so vorhin erstellt haben.
 4. Als Standort geben Sie ebenfalls (Europa) Europa, Westen an.
-5. Alle anderen Einstellungen belassen wir auf Standard.
+5. Alle anderen Einstellungen belassen Sie auf Standard.
 
 > [**Vorlage für die Automatisierung**](../Vorlagen/VNET.md)
 

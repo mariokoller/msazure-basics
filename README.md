@@ -1,4 +1,4 @@
-# **Automatisierung mit MS Azure**
+# Automatisierung mit MS Azure
 
 ![Logo Selbststudienkurs](Bilder/VA_GitHub_Logo.png)
 
