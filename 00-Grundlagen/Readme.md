@@ -9,8 +9,6 @@ Nach Abschluss des Kapitels 00-Grundlagen, kennen Sie den Aufbau der Azure Platt
 - [Azure Plattform](#Azure-Plattform)
 - [Ressourcen erstellen](#Ressourcen-erstellen)
 - [REST API](#REST-API)
-<br>
-<br>
 
 # Azure Plattform
 

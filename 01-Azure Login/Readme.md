@@ -99,15 +99,43 @@ Sie können aber gerne einen anderen Client verwenden.
 Wenn Postman installiert ist, muss dieser noch konfiguriert werden, mit den Angaben welche Sie vorhin von Azure ausgelesen haben.
 
 1. Erstellen Sie im linken Teil des GUI eine neue Collection
-2. Geben Sie Ihr einen passenden Namen und konfigurieren Sie die Variablen<br>
+2. Geben Sie Ihr einen passenden Namen und konfigurieren Sie die Variablen
+<br>
+
 ![Postman Collection](../Bilder/Postman_Collection.png)
 
 # Bearer Token
 >[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
 
-Die Trägerauthentifizierung (auch als Tokenauthentifizierung bezeichnet) ist ein HTTP-Authentifizierungsschema, das Sicherheitstoken umfasst, die als Träger-Token bezeichnet werden. Der Name "Trägerauthentifizierung" kann als "*Zugriff auf den Träger dieses Tokens gewähren*" verstanden werden. Der Trägertoken ist eine kryptische Zeichenfolge, die normalerweise vom Server als Antwort auf eine Anmeldeanforderung generiert wird. Der Client muss diesen Token im Authorization-Header senden, wenn er Anforderungen an geschützte Ressourcen sendet.<br>
+Die Trägerauthentifizierung (auch als Tokenauthentifizierung bezeichnet) ist ein HTTP-Authentifizierungsschema, welcher Sicherheitstoken umfasst, die als Träger-Token bezeichnet werden. Der Name "Trägerauthentifizierung" kann als "*Zugriff auf den Träger dieses Tokens gewähren*" verstanden werden. Der Trägertoken ist eine kryptische Zeichenfolge, die normalerweise vom Server als Antwort auf eine Anmeldeanforderung generiert wird. Der Client muss diesen Token im Authorization-Header senden, wenn er Anforderungen an geschützte Ressourcen sendet.<br>
 
 Folgende Grafik sollte dies besser veranschaulichen können.<br>
 
-![Bearer Token](../Bilder/VA_Grafik_Bearer_Token.png)
+![Bearer Token](../Bilder/VA_Grafik_Bearer_Token.png)<br>
 
+### **Bearer Token Abfrage**
+
+`GET https://login.microsoftonline.com/{{tenantId}}/oauth2/token?api-version=2019-03-01`<br>
+{{tenantId}} ist eine Variable welche Sie in der Collection erfasst haben.<br>
+
+Im Body müssen noch folgende Angaben mitgegeben werden.<br>
+
+![Postman Bearer Token](../Bilder/Postman_BearerToken.png)
+<br>
+
+Als Statusausgabe erhalten Sie den HTTP Request 200 OK, mit folgendem Inhalt:<br>
+
+```
+{
+    "token_type": "Bearer",
+    "expires_in": "3600",
+    "ext_expires_in": "3600",
+    "expires_on": "1573656273",
+    "not_before": "1573652373",
+    "resource": "https://management.core.windows.net/",
+    "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkJCOENlRlZxeWFHckdOdWVoSklpTDRkZmp6dyIsImtpZCI6IkJCOENlRlZxeWFHckdOdWVoSklpTDRkZmp6dyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldC8iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mNzMzZmRjNS0xMjU1LTRkOGQtYjc5My0yYmM3YWNhMGYyMTQvIiwiaWF0IjoxNTczNjUyMzczLCJuYmYiOjE1NzM2NTIzNzMsImV4cCI6MTU3MzY1NjI3MywiYWlvIjoiNDJWZ1lMakVmUExTaXpkZHladnIvM3UvMWwvN0RBQT0iLCJhcHBpZCI6IjZlZmRmOGVkLWI5NzktNGQ5OS04YzAwLTU5NjVhODI4NDE5MiIsImFwcGlkYWNyIjoiMSIsImlkcCI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0L2Y3MzNmZGM1LTEyNTUtNGQ4ZC1iNzkzLTJiYzdhY2EwZjIxNC8iLCJvaWQiOiJhMTNjOWYxNy0wZjkxLTQzZDctODY0MS0wMzM4NGE0N2Q3NzQiLCJzdWIiOiJhMTNjOWYxNy0wZjkxLTQzZDctODY0MS0wMzM4NGE0N2Q3NzQiLCJ0aWQiOiJmNzMzZmRjNS0xMjU1LTRkOGQtYjc5My0yYmM3YWNhMGYyMTQiLCJ1dGkiOiJLYWRIQ1RXSTJVcS1oZ2IxOFk3dUFBIiwidmVyIjoiMS4wIn0.JCV523Ze9LCGztj9R7aqL3baSI1uJq1giSwdYhVTsDLMZmlLseCiHi2WdonpAvozCTiNJMzIpTQi_yn450BpMXP9CTzLwmDKlL5QBQb6DMfOhcEpJoio_tR-cjnS0o2RF9YZfleQhoesXkpuCLYhA48CCsoDLJqp1eLsNRfmad8ktRuzKWNq5zKLqM06yAj85AzKgYKSlNK4oXNMyeMoWRmmxfSMkLmWTMgmFPahVwLYSEdumg4fsZ4Esl6nyvEdCilw85JWuPKtrQypyRiI5tOwulBacG01BRqorMvWQU1R3-_2v9SppPIkrDQ3Ro1j7EcwDf2WJQpnXuthBdLmIQ"
+}
+```
+Diese kryptische Zeichenfolge ist Ihr Bearer Token, welcher nun für **eine Stunde gültig** ist.<br>
+
+> **WICHTIG: Speichern Sie den GET Request in Ihrer Collection ab.**
