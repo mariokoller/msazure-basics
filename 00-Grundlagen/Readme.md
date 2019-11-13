@@ -1,4 +1,4 @@
-# 00-Grundlagen
+# **00-Grundlagen**
 
 Dieses Kapitel behandelt einerseits die Grundlagen zur Azure Plattform und zum REST API und dient des weiteren dazu, das man Ressourcen erstellt, welche zwingend für das Kapitel 01-Azure Login und 02-VM notwendig sind.
 
@@ -9,6 +9,8 @@ Nach Abschluss des Kapitels 00-Grundlagen, kennen Sie den Aufbau der Azure Platt
 - [Azure Plattform](#Azure-Plattform)
 - [Ressourcen erstellen](#Ressourcen-erstellen)
 - [REST API](#REST-API)
+<br>
+<br>
 
 # Azure Plattform
 
