@@ -58,3 +58,17 @@ GET https://management.azure.com/subscriptions/5137de89-2b0d-4671-b576-0ed207322
 <details><summary>Antwort</summary><p>
 Die Ressourcengruppen der SubscriptionId "5137de89-2b0d-4671-b576-0ed207322766", dies kann beispielsweise ein Storage sein oder ein Netzwerküberwachungsdienst von Azure. Weitere Ressourcengruppen finden Sie im Kapitel 00-Grundlagen.
 </p></details>
+
+---
+
+**7. Weshalb ist es sinnvoll in REST Clients mit Variablen zu arbeiten?**<br>
+<details><summary>Antwort</summary><p>
+Variablen müssen nur einmal eingegeben werden und können danach immer wieder abgerufen werden, ebenfalls können Variablen durch gewisse Requests automatisiert angepasst werden, wodurch der ganze Automatisierungsprozess optimiert wird.
+</p></details>
+
+---
+
+**8. Im Kapitel 02-VM erstellen, kommt im Template der Begriff SKU vor, was ist das?**<br>
+<details><summary>Antwort</summary><p>
+SKU steht für "Stock Keeping Unit" und lässt sich allgemein bei jeder Art von Produkten finden. Eine SKU ist eine Form der Artikelnummer, da sie ein konkretes Produkt genau bestimmt.
+</p></details>

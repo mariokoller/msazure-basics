@@ -8,7 +8,6 @@ Sie können nach Abschluss dieses Kapitels den Bodyinhalt eines REST Requests na
 ### **Inhaltsverzeichnis**
 - [VM Template](#VM-Template)
 - [REST Request erstellen](#REST-Request-erstellen)
-- [Azure Ressourcenübersicht](#Azure-Ressourcenübersicht)
 
 # VM Template
 >[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
@@ -57,7 +56,7 @@ Mit folgendem [Link](https://docs.microsoft.com/en-us/rest/api/compute/virtualma
           "createOption": "Empty",
           "lun": 1
 ```
-Folgender Abschnitt zeigt im oberen Teil, die Disk auf welcher die zwei unteren "Partitionen" erstellt wurden mit je 1023 GB Speicher.
+Folgender Abschnitt zeigt im oberen Teil `name: VMdisk`, die Disk auf welcher die zwei LUN's erstellt wurden mit je 1023 GB Speicher. Der Name wie auch die Diskgrösse kann nach belieben geändert werden.
 
 **Vierter und letzter Teil**
 ```
@@ -73,8 +72,8 @@ Folgender Abschnitt zeigt im oberen Teil, die Disk auf welcher die zwei unteren 
           "properties": {
             "primary": true
 ```
-Im letzten Abschnitt 
-
+Im letzten Abschnitt wird ein Admin-User und das dazugehörige Passwort, wie auch der Computername definiert.<br>
+Die &rarr; *SubscriptionId* welche im Kapitel 00-Grundlagen sowie die erstellten Ressourcen müssen hier angegeben werden, diese sind die &rarr; *Ressourcengruppen* und das &rarr; *Virtuelle Netzwerk*.
 <br>
 
 > **Den Link zum kompletten Template finden Sie [**hier**](../Vorlagen/VM_Template.md).**
@@ -82,7 +81,18 @@ Im letzten Abschnitt
 # REST Request erstellen
 >[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
 
+Mittels einem PUT Request erstellen Sie nun die virtuelle Maschine.<br>
+Dieser kann wie folgt aussehen:<br>
+```
+PUT https://management.azure.com/subscriptions/{{subscriptionId}}/resourceGroups/storagemsazurebasics/providers/Microsoft.Compute/virtualMachines/NeuerWin2016Srv?api-version=2019-03-01
+```
+Wichtig ist vor allem, dass im Header folgende Angaben mitgegeben werden.<br>
 
+Key               | Value
+------------------|-----------------------------------------
+Content-Type      | `application/json`
+Authorization     | `Bearer {{bearertoken}}`
 
-# Azure Ressourcenübersicht
->[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+Dann muss das im Subkapitel erstellte Template im Body einefügt werden und der Request kann ausgeführt werden.<br>
+
+> **Der POST Request vom Kapitel 01-Azure Login muss zuerst ausgeführt werden, da der Bearer Token nur 1 Stunde gültig ist.**
