@@ -7,14 +7,18 @@ Nach Abschluss des Kapitels 00-Grundlagen, kennen Sie den Aufbau der Azure Platt
 
 ### **Inhaltsverzeichnis**
 - [Azure Plattform](#Azure-Plattform)
+  - [Übersicht](###Übersicht)
 - [Ressourcen erstellen](#Ressourcen-erstellen)
+  - [Ressourcengruppen](###Ressourcengruppen)
+  - [Virtuelles Netzwerk](###Virtuelles-Netzwerk)
 - [REST API](#REST-API)
 
 # Azure Plattform
-
-> [&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 ### **Übersicht**
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
+
 Zuerst einmal eine kurze Übersicht über alle Ressourcen die Sie auf der Hauptseite sehen.<br>
 
 Menüpunkte                                                             | Beschreibung
@@ -41,13 +45,13 @@ Menüpunkte                                                             | Beschr
 ![](../Bilder/Hilfe.png)<br>Hilfe und Support                          | Sie haben ein Problem in Ihrem Azure Konto oder wissen über etwas nicht Bescheid, dieser Menüpunkt sollte Ihnen behilflich sein.
 
 # Ressourcen erstellen
-
-> [&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Die folgenden zwei Ressourcen sind notwendig, um mit dem Folgekapiteln **01-Azure Login** und **02-VM erstellen** weiterzufahren.<br>
 Die Vorlagen für die Automatisierung finden Sie immer am Ende eines Subkapitels. 
 
 ### **Ressourcengruppen**
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Muss manuell erstellt werden, erst mittels dieser Ressourcengruppe lässt sich mittels REST API weitere Ressourcen ansteurn.
 
@@ -58,6 +62,7 @@ Muss manuell erstellt werden, erst mittels dieser Ressourcengruppe lässt sich m
 > [**Vorlage für die Automatisierung**](../Vorlagen/Ressourcengruppe.md)
 
 ### **Virtuelles Netzwerk**
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 1. Klicken Sie auf Virtuelle Netzwerke und danach auf Hinzufügen
 2. Geben Sie dem virtuellem Netzwerk einen **eindeutigen** Namen, dieser wiederrum wird auch im Kapitel 01-Azure Login und 02-VM erstellen benötigt.
@@ -68,7 +73,7 @@ Muss manuell erstellt werden, erst mittels dieser Ressourcengruppe lässt sich m
 > [**Vorlage für die Automatisierung**](../Vorlagen/VNET.md)
 
 # REST API
->[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Was ist ein REST API?<br>
 

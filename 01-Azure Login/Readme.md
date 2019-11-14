@@ -7,11 +7,16 @@ Wenn Sie dieses Kapitel durchgearbeitet haben, kennen Sie die wichtigsten Parame
 
 ### **Inhaltsverzeichnis**
 - [Azure ID's auslesen](#Azure-Plattform)
+  - [Azure Cloud Shell](###Azure-Cloud-Shell)
 - [REST API Client](#REST-API-Client)
+  - [Postman konfigurieren](###Postman-konfigurieren)
 - [Bearer Token](#Bearer-Token)
+  - [Bearer Token Abfrage](###Bearer-Token-Abfrage)
+  - [Bearer Token automatisieren](###Bearer-Token-automatisieren)
+  - [Bearer Token testen](###Bearer-Token-testen)
 
 # Azure ID's auslesen
->[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Für was benötigen Sie solche ID's?<br>
 
@@ -34,6 +39,8 @@ Folgende ID's benötigen Sie von Azure um weiterzufahren:
 - resource &rarr; `https://management.azure.com/`
 
 ### **Azure Cloud Shell**
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
+
 Gehen Sie auf Ihr Microsoft Azure Konto und öffnen Sie Cloud Shell.<br>
 
 Geben Sie folgende Befehle ein:<br>
@@ -85,7 +92,7 @@ Sie haben nun alle ID's welche Sie benötigen.<br>
 *appId: 62f888a1-8275-420d-818e-3aba5966dade*<br>
 
 # REST API Client
->[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Um ein REST API absetzen zu können, benötigt man unter Windows ein REST API Client.<br>
 
@@ -95,6 +102,7 @@ Postman kann direkt ab folgendem [Link](https://app.getpostman.com/run-collectio
 Sie können aber gerne einen anderen Client verwenden.
 
 ### **Postman konfigurieren**
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Wenn Postman installiert ist, muss dieser noch konfiguriert werden, mit den Angaben welche Sie vorhin von Azure ausgelesen haben.
 
@@ -105,7 +113,7 @@ Wenn Postman installiert ist, muss dieser noch konfiguriert werden, mit den Anga
 ![Postman Collection](../Bilder/Postman_Collection.png)
 
 # Bearer Token
->[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Die Trägerauthentifizierung (auch als Tokenauthentifizierung bezeichnet) ist ein HTTP-Authentifizierungsschema, welcher Sicherheitstoken umfasst, die als Träger-Token bezeichnet werden. Der Name "Trägerauthentifizierung" kann als "*Zugriff auf den Träger dieses Tokens gewähren*" verstanden werden. Der Trägertoken ist eine kryptische Zeichenfolge, die normalerweise vom Server als Antwort auf eine Anmeldeanforderung generiert wird. Der Client muss diesen Token im Authorization-Header senden, wenn er Anforderungen an geschützte Ressourcen sendet.<br>
 
@@ -114,6 +122,7 @@ Folgende Grafik sollte dies besser veranschaulichen können.<br>
 ![Bearer Token](../Bilder/VA_Grafik_Bearer_Token.png)<br>
 
 ### **Bearer Token Abfrage**
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 `GET https://login.microsoftonline.com/{{tenantId}}/oauth2/token?api-version=2019-03-01`<br>
 {{tenantId}} ist eine Variable welche Sie in der Collection erfasst haben.<br>
@@ -143,6 +152,7 @@ Als Statusausgabe erhalten Sie den HTTP Response 200 OK, mit folgendem Inhalt:<b
 Diese kryptische Zeichenfolge ist Ihr Bearer Token, welcher nun für **eine Stunde gültig** ist.<br>
 
 ### **Bearer Token automatisieren**
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Um das ganze besser automatisieren zu können, erstellen Sie folgenden POST Request, welcher den Bearer Token direkt in die Variable {{bearerToken}} abspeichert.<br>
 
@@ -173,6 +183,8 @@ Nun wird beim absetzen des POST Request die Variable {{bearerToken}} automatisie
 > **WICHTIG: Vergessen Sie nicht diesen POST Request abzuspeichern!**
 
 ### **Bearer Token testen**
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
+
 Ob der von Ihnen automatisierte POST Request auch funktioneirt, können Sie mittels folgendem GET Request die Ressourcen Gruppen Ihrer SubscriptionId auslesen.
 
 `GET https://management.azure.com/subscriptions/{{subscriptionId}}/resourcegroups?api-version=2019-03-01`

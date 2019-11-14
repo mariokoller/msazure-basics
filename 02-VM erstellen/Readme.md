@@ -10,7 +10,7 @@ Sie können nach Abschluss dieses Kapitels den Bodyinhalt eines REST Requests na
 - [REST Request erstellen](#REST-Request-erstellen)
 
 # VM Template
->[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Sie sind nun mit der Thematik Automatisierung ein wenig vertrauter, daher wird ein Template für die Erstellung einer virtuellen Maschine einmal auseinandergenommen und analysiert.
 
@@ -79,7 +79,7 @@ Die &rarr; *SubscriptionId* welche im Kapitel 00-Grundlagen sowie die erstellten
 > **Den Link zum kompletten Template finden Sie [**hier**](../Vorlagen/VM_Template.md).**
 
 # REST Request erstellen
->[&uarr; **_Zum Inhaltsverzeichnis_**](#Inhaltsverzeichnis)
+> [&uarr; *Zum Inhaltsverzeichnis*](#Inhaltsverzeichnis)
 
 Mittels einem PUT Request erstellen Sie nun die virtuelle Maschine.<br>
 Dieser kann wie folgt aussehen:<br>
