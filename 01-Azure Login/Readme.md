@@ -127,7 +127,7 @@ client_id       | `{{clientId}}`
 client_secret   | `{{clientSecret}}`
 resource        | `https://management.core.windows.net/`
 
-Als Statusausgabe erhalten Sie den HTTP Request 200 OK, mit folgendem Inhalt:<br>
+Als Statusausgabe erhalten Sie den HTTP Response 200 OK, mit folgendem Inhalt:<br>
 
 ```
 {
@@ -171,3 +171,26 @@ pm.globals.set("bearertoken", pm.response.json().access_token);
 Nun wird beim absetzen des POST Request die Variable {{bearerToken}} automatisiert mit dem passendem Wert gefüllt.
 
 > **WICHTIG: Vergessen Sie nicht diesen POST Request abzuspeichern!**
+
+### **Bearer Token testen**
+Ob der von Ihnen automatisierte POST Request auch funktioneirt, können Sie mittels folgendem GET Request die Ressourcen Gruppen Ihrer SubscriptionId auslesen.
+
+`GET https://management.azure.com/subscriptions/{{subscriptionId}}/resourcegroups?api-version=2019-03-01`
+
+Danach sollten Sie per HTTP Response 200 OK Ihre Ressourcen Gruppen angezeigt bekommen. Welche in etwa so aussehen werden:
+
+```
+{
+    "value": [
+        {
+            "id": "/subscriptions/5137de89-2b0d-4671-b576-0ed207322766/resourceGroups/storagemsazurebasics",
+            "name": "storagemsazurebasics",
+            "type": "Microsoft.Resources/resourceGroups",
+            "location": "westeurope",
+            "properties": {
+                "provisioningState": "Succeeded"
+            }
+        }
+    ]
+}
+```
