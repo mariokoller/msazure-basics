@@ -49,12 +49,14 @@ Mit folgendem [Link](https://docs.microsoft.com/en-us/rest/api/compute/virtualma
         {
           "diskSizeGB": 1023,
           "createOption": "Empty",
-          "lun": 0
+          "lun": 0,
+          "name": "VMdisk_LUN0"
         },
         {
           "diskSizeGB": 1023,
           "createOption": "Empty",
-          "lun": 1
+          "lun": 1,
+          "name": "VMdisk_LUN1"
 ```
 Folgender Abschnitt zeigt im oberen Teil `name: VMdisk`, die Disk auf welcher die zwei LUN's erstellt wurden mit je 1023 GB Speicher. Der Name wie auch die Diskgrösse kann nach belieben geändert werden.
 
