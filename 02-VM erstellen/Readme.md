@@ -20,11 +20,11 @@ Sie sind nun mit der Thematik Automatisierung ein wenig vertrauter, daher wird e
 "location": "westeurope",
   "properties": {
     "hardwareProfile": {
-      "vmSize": "Standard_DS1_v2"
+      "vmSize": "Standard_B2ms"
 ```
 Als Location müssen Sie, wenn Sie bereits immer West Europa angegeben haben, auch hier wieder westeurope auswählen, da es ansonsten zu Fehlern kommt. Was Sie hier auch noch anpassen können ist die vmSize, es gibt von Azure gewisse Standards die Sie auswählen können, eine Übersicht dazu finden Sie auf dieser [Webseite](https://docs.microsoft.com/de-de/azure/virtual-machines/windows/sizes-general).<br>
 
-Ich habe mich für "Standard_DS1_v2" entschieden, da Sie mit der Kostenlosen Testversion nur 200$ zur Verfügung haben.
+Ich habe mich für "Standard_B2ms" entschieden, da Sie mit der Kostenlosen Testversion nur 200$ zur Verfügung haben und dies für mich das beste Preis- Leistungsverhältnis bietet.
 
 **Zum zweiten Teil dieses Templates:**
 ```
